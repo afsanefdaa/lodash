@@ -1,6 +1,6 @@
 const lodash = require('lodash');
 
-const { chunk, compact, concat, difference } = lodash;
+const { chunk, compact, concat, difference, uniq } = lodash;
 
 console.warn('___________________lesson one chunk-------------------------');
 console.warn('How make n chunks of an array');
@@ -22,8 +22,15 @@ const wannaJoinAgain = [{ a: 'hi'}];
 console.warn(arrayThree, "BECOMES ===>" , concat(arrayThree, wannaJoin, wannaJoinAgain, 30, 'afsane'));
 
 
-console.warn('___________________lesson three difference-------------------------');
+console.warn('___________________lesson four difference-------------------------');
 console.warn('How to find difference in an array');
 const arrayFour = ['element 1', 'element 2'];
 
 console.warn(arrayFour, "BECOMES ===>" , difference(arrayFour, ['element 1', ['element 2']]));
+
+
+console.warn('___________________lesson five uniqBy-------------------------');
+console.warn('How to make an array uniq');
+const arrayFive = ['element 1','element 3','element 3','element 4', 'element 1'];
+
+console.warn(arrayFive, "BECOMES ===>" , uniq(arrayFive));
