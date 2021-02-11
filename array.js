@@ -1,6 +1,8 @@
-const lodash = require('lodash');
-
-const { chunk, compact, concat, difference, uniq } = lodash;
+const chunk = require('lodash/chunk')
+const compact = require('lodash/compact')
+const concat = require('lodash/concat')
+const difference = require('lodash/difference')
+const uniq = require('lodash/uniq')
 
 console.warn('___________________lesson one chunk-------------------------');
 console.warn('How make n chunks of an array');
